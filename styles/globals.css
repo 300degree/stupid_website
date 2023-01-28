@@ -17,7 +17,7 @@ header {
 	z-index: 00;
 }
 
-.logo {
+/* .logo {
 	font-size: 2em;
 	color: #fff;
 	user-select: none;
@@ -68,4 +68,4 @@ header {
 .navigation .btnLogin-popup:hover {
 	background: #fff;
 	color: #162938;
-}
+} */

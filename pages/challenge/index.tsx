@@ -1,11 +1,21 @@
-import Navbar from '@/components/nav'
+import { GetStaticPaths, GetStaticProps } from "next";
+import { useRouter, NextRouter } from 'next/router'
+import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
+import Title from "@/components/title";
 
-const FlashCardPages = () => {
+const ChallengePages = () => {
   return (
-    <div>
-      <p>Hello world</p>
+    <div className={styles.grid}>
+      <Title />
+
+      <h1>Challenge</h1>
+      <div className={styles.challengeZone}>
+        <Link href={'challenge/quiz'}>Quiz</Link>
+        <Link href={'challenge/flashcards'}>FlashCards</Link>
+      </div>
     </div>
   )
 }
 
-export default FlashCardPages
+export default ChallengePages

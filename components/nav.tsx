@@ -1,16 +1,19 @@
-import styles from '@/styles/globals.css'
-import Link from 'next/link'
+import styles from '@/styles/Nav.module.css'
+import Image from 'next/image'
 
 const Navbar = () => {
   return (
     <>
       <header>
-        <h2 className="logo">Logo</h2>
-        <nav className="navigation">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/Character"}>Character</Link>
-          <Link href={"/Challenge"}>Challenge</Link>
-	        <button className="btnLogin-popup">Login</button>
+        <h2 className={styles.logo}>
+          Logo
+        </h2>
+        <nav className={styles.navigation}>
+          <a href={'/'}>Home</a>
+          <a href={'/character'}>Character</a>
+          <a href={'/category'}>Category</a>
+          <a href={'/challenge'}>Challenge</a>
+          {/* <button className={styles.navigation}>Login</button> */}
         </nav>
       </header>
     </>
